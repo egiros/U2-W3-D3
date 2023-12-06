@@ -66,8 +66,6 @@
     </nav>
     <div>
       <h1 class="text-center">Esercizio U2-W3-D3</h1>
-      <img src="" style="object-fit: cover; height: 250px" alt="" />
-    </div>
     <div class="container mt-5">
       <div class="cols-2"></div>
       <div class="cols-8">
@@ -88,13 +86,13 @@
           books.forEach((book) => {
             const container = document.getElementById("library");
             const card = ` 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-3">
-                <div class="card shadow-lg" style="height: 45rem">
-                    <img src="${book.img}" style="object-fit: contain;" alt="${book.title}"
+            <div class="card-group col-12 col-sm-6 col-md-4 col-lg-3 g-3">
+                <div class="card shadow-lg p-3">
+                    <img src="${book.img}" alt="${book.title}"
                     <div class="card-body">
-                        <h5 class="card-title m-auto">${book.title}</h5>
-                        <p class="card-text mt-4 m-auto">Prezzo: €${book.price}</p>
-                        <div class="mt-5 mb-3 mx-auto">
+                        <h5 class="card-title">${book.title}</h5>
+                        <p class="card-text mt-4">Prezzo: €${book.price}</p>
+                        <div class="mt-5 mb-3">
                             <a href="#" class="btn btn-success m-1">Aggiungi al carrello</a>
                             <a href="#" class="btn btn-danger m-1">Scarta</a>
                         </div>
